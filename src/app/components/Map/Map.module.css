@@ -1,0 +1,286 @@
+/* Layout styles */
+.mapSearchOnTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: white;
+    padding: 0.9375rem 0.625rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Component styles */
+.appLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.3125rem;
+}
+
+/* Search input style */
+.mapSearchInput {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 37.5rem;
+    height: 2.5rem;
+}
+
+.mapSearchInput input {
+    width: 100%;
+    height: 100%;
+    padding: 0.875rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+}
+
+/* Search input GeoLocation and Search button style */
+.mapSearchInputGeo,
+.mapSearchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    margin-left: 0.625rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.3125rem rgba(255, 54, 44, 0.3);
+}
+
+/* Search input GeoLocation button style */
+.mapSearchInputGeo {
+    width: 2.5rem;
+    padding: 0.3125rem;
+}
+
+/* Search input GeoLocation and Search button hover style */
+.mapSearchInputGeo:hover,
+.mapSearchButton:hover {
+    background-color: #FF362C;
+}
+
+/* GeoLocation icon style */
+.mapSearchInputGeoImg {
+    width: 1.375rem;
+    height: 1.375rem;
+    filter: brightness(0) invert(1);
+}
+
+/* Search button style */
+.mapSearchButton {
+    padding: 0 1.25rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Popup window wrapper styles */
+.popupContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.3s ease-out;
+    z-index: 1000;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 1.25rem;
+    box-sizing: border-box;
+}
+
+/* Popup window content styles */
+.popupContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Popup window content title styles */
+.popupContentTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    text-align: center;
+}
+
+/* Popup window content image styles */
+.popupContentImage {
+    width: 100%;
+    height: 16.25rem;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.popupContainerInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    background-color: #F1F1F1;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.625rem;
+    padding: 0.875rem;
+    margin-bottom: 0.625rem;
+    height: 6.25rem;
+}
+
+/* Popup window content small availability span styles */
+.popupContentSmallAvailabilitySpan,
+.popupContentOpeningHoursSpan,
+.popupContentRating,
+.popupContentRatingSpan {
+    font-weight: bold;
+}
+
+/* Popup content close button style */
+.closeButton {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Button "Details" link style */
+.visitLink {
+    font-size: 1rem;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    background-color: #ff4d4d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-weight: 600;
+    box-shadow: 0 0.125rem 0.3125rem rgba(255, 54, 44, 0.3);
+    text-align: center;
+    width: 100%;
+    /* Make the button full width */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+    display: block;
+    /* Ensure it takes up full width as a block element */
+}
+
+.visitLink:hover {
+    background-color: #ff362c;
+}
+
+/* Popup content grey line style */
+.popupContentHr {
+    border: 0.125rem solid #d1d1d1;
+    border-radius: 0.625rem;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles
+@media screen and (max-width: 420px) {
+    .mapSearchOnTop {
+        flex-direction: row;
+        padding: 10px 5px;
+    }
+
+    .mapSearchInput {
+        max-width: 100%;
+    }
+
+    .mapSearchInput input {
+        margin-bottom: 10px;
+        margin: 5px;
+    }
+
+    .mapSearchInputGeo,
+    .mapSearchButton {
+        margin: 5px;
+    }
+
+    .popupContainer {
+        height: 70vh;
+    }
+
+    .popupContent {
+        padding: 5px;
+    }
+
+    .popupContentTitle {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .popupContentImage {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .visitLink {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .appLogo {
+        display: none;
+    }
+
+    .mapSearchOnTop {
+        padding: 5px;
+    }
+
+    .mapSearchInput input {
+        font-size: 0.9rem;
+    }
+
+    .mapSearchButton {
+        font-size: 0.9rem;
+    }
+
+    .popupContentTitle {
+        font-size: 18px;
+    }
+
+    .popupContentImage {
+        max-width: 200px;
+    }
+
+    .mapSearchInput {
+        height: auto;
+    }
+
+    .mapSearchInputGeo,
+    .mapSearchButton {
+        height: 40px;
+        margin-top: 5px;
+    }
+} */

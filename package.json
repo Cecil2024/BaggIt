@@ -1,0 +1,32 @@
+{
+  "name": "baggit-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@react-google-maps/api": "^2.19.3",
+    "@supabase/supabase-js": "^2.45.4",
+    "@types/google.maps": "^3.58.1",
+    "google-maps": "^4.3.3",
+    "lato-font": "^3.0.0",
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "jest": "^29.7.0",
+    "prettier": "3.3.3"
+  }
+}

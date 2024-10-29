@@ -1,0 +1,30 @@
+.termsContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px;
+}
+
+.title {
+  color: #ef4d44;
+}
+
+.spacer {
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #555;
+  margin-bottom: 10px;
+}

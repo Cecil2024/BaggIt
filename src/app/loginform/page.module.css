@@ -1,0 +1,54 @@
+.logIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: “Albert Sans”, sans-serif;
+    color: #EF4D44;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.form input {
+    margin: 0.625rem 0;
+    padding: 0.625rem;
+    border: 0.0625rem solid #F77E78;
+    border-radius: 0.3125rem;
+    width: 100%;
+}
+
+.formButton {
+    width: 100%;
+    margin: 0.625rem 0;
+    padding: 0.625rem;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    border: none;
+    background-color: #f77e78;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+}
+
+.formButton:hover {
+    background-color: #ef4d44;
+}
