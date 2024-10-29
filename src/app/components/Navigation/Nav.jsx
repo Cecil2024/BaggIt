@@ -9,7 +9,7 @@ export default function Nav() {
                         <Image className={styles.navIcon} src="/home.png" alt="home" width={25} height={25} />Home
                     </a> </li>
                 <li className={styles.navItem}>
-                    <a className={styles.navLink} href="https://baggit-app.vercel.app/booking">
+                    <a className={styles.navLink} href="/booking">
                         <Image className={styles.navIcon} src="/booking.png" alt="booking" width={25} height={25} />Booking
                     </a> </li>
                 <li className={styles.navItem}>
